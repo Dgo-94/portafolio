@@ -374,7 +374,7 @@ footer div {
   /* Forzamos a que el logo y el texto estén en la misma línea */
   header .brand a {
     display: flex;
-    flex-direction: row; /* Esto mueve la imagen a la derecha del texto */
+    flex-direction: row; /* Esto mantiene la imagen a la izquierda del texto */
     align-items: center;
     gap: 8px; /* Espacio entre el texto y el logo */
   }
@@ -430,6 +430,7 @@ footer div {
     display: block;
   }
 }
+
 
 
 
