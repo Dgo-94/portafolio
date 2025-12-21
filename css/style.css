@@ -371,17 +371,41 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
+  /* Reducimos el padding del header para ganar espacio */
+  header {
+    padding: 0.8rem 1rem;
+    flex-direction: column; /* Apila el logo arriba y el resto abajo si es necesario */
+    gap: 0.8rem;
+  }
+
+  /* Hacemos que el logo sea un poco más pequeño */
+  header .brand h1 {
+    font-size: 1.2rem;
+  }
+  
+  header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Ajustamos la navegación para que no use tanto espacio */
   header nav ul {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem; /* Espacio más pequeño entre links */
   }
 
-  .hero-stats {
-    flex-direction: column;
-    gap: 1rem;
+  header nav a {
+    font-size: 0.85rem;
+    padding: 4px 8px;
   }
 
-  section {
-    padding: 1.8rem;
+  /* Las acciones (CV y selector) */
+  header .header-actions {
+    width: 100%;
+    justify-content: center;
+    gap: 0.8rem;
   }
 }
+}
+
