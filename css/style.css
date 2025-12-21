@@ -371,41 +371,38 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
-  /* Reducimos el padding del header para ganar espacio */
-  header {
-    padding: 0.8rem 1rem;
-    flex-direction: column; /* Apila el logo arriba y el resto abajo si es necesario */
-    gap: 0.8rem;
+  /* Forzamos a que el logo y el texto estén en la misma línea */
+  header .brand a {
+    display: flex;
+    flex-direction: row-reverse; /* Esto mueve la imagen a la derecha del texto */
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y el logo */
   }
 
-  /* Hacemos que el logo sea un poco más pequeño */
+  /* Ajustamos el tamaño para que quepan juntos */
   header .brand h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Texto más pequeño para que no empuje el logo */
+    margin: 0;
+  }
+
+  header .brand img {
+    width: 35px; /* Logo más pequeño */
+    height: 35px;
+  }
+
+  /* Reducimos el padding del header para que sea más delgado */
+  header {
+    padding: 0.6rem 1rem;
+    justify-content: space-between;
+  }
+
+  /* Ajustes opcionales para el menú si sigue ocupando mucho espacio */
+  header nav ul {
+    gap: 0.5rem;
   }
   
-  header img {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* Ajustamos la navegación para que no use tanto espacio */
-  header nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem; /* Espacio más pequeño entre links */
-  }
-
   header nav a {
-    font-size: 0.85rem;
-    padding: 4px 8px;
-  }
-
-  /* Las acciones (CV y selector) */
-  header .header-actions {
-    width: 100%;
-    justify-content: center;
-    gap: 0.8rem;
+    font-size: 0.8rem;
+    padding: 4px 6px;
   }
 }
-}
-
