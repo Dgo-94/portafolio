@@ -397,13 +397,15 @@ footer div {
   }
 
   /* Ajustes opcionales para el menú si sigue ocupando mucho espacio */
-  header nav ul {
-    gap: 0.5rem;
+  header nav a {
+    white-space: nowrap; /* Evita el salto de línea en  */
+    font-size: 0.8rem;    /* Asegúrate de que el tamaño no sea excesivo */
+    padding: 4px 6px;
   }
   
-  header nav a {
-    font-size: 0.8rem;
-    padding: 4px 6px;
+   header nav ul {
+    gap: 0.4rem;         /* Reduce un poco más el espacio entre botones */
+    justify-content: center;
   }
    /* 1. Cambiamos la dirección a una columna o una cuadrícula pequeña */
   .hero-stats {
@@ -430,6 +432,7 @@ footer div {
     display: block;
   }
 }
+
 
 
 
