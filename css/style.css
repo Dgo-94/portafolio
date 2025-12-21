@@ -405,4 +405,30 @@ footer div {
     font-size: 0.8rem;
     padding: 4px 6px;
   }
+   /* 1. Cambiamos la dirección a una columna o una cuadrícula pequeña */
+  .hero-stats {
+    flex-direction: row; /* Los mantenemos en fila pero con ajustes */
+    flex-wrap: wrap;     /* Si no caben, que bajen suavemente */
+    justify-content: center;
+    gap: 1.5rem;         /* Reducimos el espacio de 3rem a 1.5rem */
+    margin: 1.5rem 0;
+  }
+
+  /* 2. Reducimos el tamaño de los números y etiquetas */
+  .hero-stats div {
+    flex: 1 1 100px;    /* Permite que cada stat tenga un tamaño mínimo */
+    min-width: 80px;
+  }
+
+  .hero-stats data {
+    font-size: 1.6rem;  /* Bajamos de 2.3rem a 1.6rem */
+    display: block;     /* Asegura que el número esté arriba del texto */
+  }
+
+  .hero-stats span {
+    font-size: 0.8rem;  /* Texto descriptivo más pequeño */
+    line-height: 1.2;
+    display: block;
+  }
 }
+
