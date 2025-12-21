@@ -2,19 +2,11 @@
 <html lang="es">
 
 <head>
-  <!-- 
-    ========================================
-    METADATOS ESENCIALES
-    ========================================
-    -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Básico -->
   <title>Daniel Gomez - Mi Perfil Personal | Desarrollador Web en Formación</title>
 
-  <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/style.css"> 
 
   <meta name="description"
@@ -23,64 +15,49 @@
   <meta name="author" content="Daniel Gomez">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph para Redes Sociales -->
   <meta property="og:title" content="Daniel Gomez - Mi Perfil Personal">
   <meta property="og:description"
     content="Descubre mi viaje aprendiendo desarrollo web, mis proyectos y mi pasión por la tecnología.">
-  <meta property="og:image" content="https://danielgomezmiperfilpersonal.com/assets/icons/logo.png">
-  <meta property="og:url" content="https://danielgomezmiperfilpersonal.com">
+  <meta property="og:image" content="assets/icons/logo400p.png">
+  <meta property="og:url" content="https://dgo-94.github.io/portafolio/">
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Mi Perfil Personal">
 
 
-  <!-- URLs Canónicas -->
-  <link rel="canonical" href="https://danielgomezmiperfilpersonal.com/">
-  <link rel="alternate" hreflang="es" href="https://danielgomezmiperfilpersonal.com/es/">
-  <link rel="alternate" hreflang="en" href="https://danielgomezmiperfilpersonal.com/en/">
+  <link rel="canonical" href="https://dgo-94.github.io/portafolio/">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/logo400p.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/logo400p.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/logo400p.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo400p.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/logo400p.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/logo400p.png">
   
 
 </head>
 
 <body>
-  <!-- 
-    ========================================
-    HEADER PRINCIPAL
-    ========================================
-    -->
-
   <header role="banner">
-    <!-- Logo y Marca Personal -->
     <div class="brand">
-      <a href="miperfil.html" aria-label="Mi Perfil Personal - Inicio">
+      <a href="index.html" aria-label="Mi Perfil Personal - Inicio">
         <img src="assets/icons/logo400p.png" alt="Mi Perfil Personal" width="64" height="64">
         <h1><span>Mi Perfil Personal</span></h1>
       </a>
     </div>
 
-    <!-- Navegación Principal -->
     <nav aria-label="Navegación principal">
       <ul>
-        <li class="inicio"><a href="/miperfil.html" aria-current="page">Inicio</a></li>
-        <li><a href="/sobre-mi.html">Sobre mí</a></li>
-        <li><a href="/habilidades.html">Habilidades</a></li>
-        <li><a href="/proyectos.html">Proyectos</a></li>
-        <li><a href="/blog.html">Blog</a></li>
+        <li class="inicio"><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="https://wa.me/573004775608" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">Contacto</a></li>
       </ul>
     </nav>
 
-    <!-- Acciones Rápidas -->
     <div class="header-actions">
-      <a href="/assets/documents/Hoja_de_Vida_Desarrollador_Web_Daniel_Gomez.docx" download
+      <a href="assets/documents/Hoja_de_Vida_Desarrollador_Web_Daniel_Gomez.docx" download
         aria-label="Descargar CV en PDF">📄 CV</a>
 
-      <!-- Selector de Idioma -->
       <select aria-label="Seleccionar idioma">
         <option value="es" selected>ES</option>
         <option value="en">EN</option>
@@ -88,15 +65,8 @@
     </div>
   </header>
 
-  <!-- 
-    ========================================
-    CONTENIDO PRINCIPAL
-    ========================================
-    -->
-
   <main id="contenido-principal" role="main">
 
-    <!-- Hero Section -->
     <section aria-labelledby="hero-titulo">
       <h2 id="hero-titulo">¡Hola! Soy Daiel Gomez</h2>
       <p><strong>Desarrollador Web en Formación</strong></p>
@@ -106,13 +76,11 @@
         web increíbles.
       </p>
 
-      <!-- Call to Actions -->
       <div class="hero-actions">
         <a href="#proyectos-destacados">Ver Mis Proyectos</a>
-        <a href="/contacto.html">Contáctame</a>
+        <a href="contacto.html">Contáctame</a>
       </div>
 
-      <!-- Estadísticas Rápidas -->
       <div class="hero-stats">
         <div>
           <data value="1">1+</data>
@@ -128,18 +96,16 @@
         </div>
       </div>
 
-      <!-- Imagen de Perfil -->
       <figure>
         <picture>
-          <source media="(min-width: 768px)" srcset="/assets/imagenes/perfil/perfil.jpg" type="image/jpeg">
-          <img src="/assets/imagenes/perfil/perfil.jpg" alt="Daniel Gomez - Desarrollador Web en Formación" width="500"
+          <source media="(min-width: 768px)" srcset="assets/imagenes/perfil/perfil.jpg" type="image/jpeg">
+          <img src="assets/imagenes/perfil/perfil.jpg" alt="Daniel Gomez - Desarrollador Web en Formación" width="500"
             height="500" loading="eager">
         </picture>
         <figcaption>Daniel Gomez momento recreativo</figcaption>
       </figure>
     </section>
 
-    <!-- Sección Sobre Mí -->
     <section aria-labelledby="about-titulo">
       <h2 id="about-titulo">Mi proceso de formación</h2>
 
@@ -162,7 +128,6 @@
         <cite>— Mi filosofía de aprendizaje</cite>
       </blockquote>
 
-      <!-- Valores Personales -->
       <h3>Mis Habilidades Blandas</h3>
       <dl>
         <dt>🎯 Dedicación</dt>
@@ -178,12 +143,11 @@
         <dd>Buscando soluciones innovadoras</dd>
       </dl>
 
-      <a href="/sobre-mi.html">
+      <a href="sobre-mi.html">
         Conoce más sobre mí →
       </a>
     </section>
 
-    <!-- Proyectos Destacados -->
     <section id="proyectos-destacados" aria-labelledby="projects-titulo">
       <h2 id="projects-titulo">Mis Proyectos de Práctica</h2>
       <p>
@@ -191,7 +155,6 @@
         Desde páginas simples hasta este portfolio completo.
       </p>
 
-      <!-- Proyecto 1 -->
       <article>
         <figure>
           <picture>
@@ -206,7 +169,7 @@
         <p>
           Mi primer proyecto completo usando HTML. Una página
           simple pero bien estructurada donde apliqué los conceptos
-          básicos aprendidos.
+           básicos aprendidos.
         </p>
 
         <h4>Lo que aprendí:</h4>
@@ -233,7 +196,7 @@
           <data value="95">95</data> Score en Lighthouse
         </div>
 
-        <a href="miperfil.html">
+        <a href="index.html">
           Ver detalles del proyecto
         </a>
         <a href="#" target="_blank" rel="noopener">
@@ -241,33 +204,32 @@
         </a>
       </article>
 
-      <a href="/proyectos.html">
+      <a href="proyectos.html">
         Ver todos los proyectos →
       </a>
     </section>
 
-    <!-- Habilidades Técnicas -->
     <section aria-labelledby="skills-titulo">
       <h2 id="skills-titulo">Mis Habilidades</h2>
 
       <h3>Tecnologías que estoy aprendiendo</h3>
       <ul>
         <li>
-          <img src="/assets/icons/html.png" alt="" width="40" height="40" aria-hidden="true">
+          <img src="assets/icons/html.png" alt="" width="40" height="40" aria-hidden="true">
           <span>HTML5 & Semántica</span>
           <progress value="75" max="100" aria-label="75% de dominio">
             75%
           </progress>
         </li>
         <li>
-          <img src="/assets/icons/css.png" alt="" width="40" height="40" aria-hidden="true">
+          <img src="assets/icons/css.png" alt="" width="40" height="40" aria-hidden="true">
           <span>CSS3 & Diseño</span>
           <progress value="30" max="100" aria-label="30% de dominio">
             30%
           </progress>
         </li>
         <li>
-          <img src="/assets/icons/javascript.png" alt="" width="40" height="40" aria-hidden="true">
+          <img src="assets/icons/javascript.png" alt="" width="40" height="40" aria-hidden="true">
           <span>JavaScript (Comenzando)</span>
           <progress value="10" max="100" aria-label="10% de dominio">
             10%
@@ -276,18 +238,16 @@
       </ul>
     </section>
 
-    <!-- Blog Reciente -->
     <section aria-labelledby="blog-titulo">
       <h2 id="blog-titulo">Mi Blog de Aprendizaje</h2>
       <p>
         Comparto mi experiencia aprendiendo desarrollo web.
       </p>
 
-      <!-- Artículo 1 -->
       <article>
         <time datetime="2025-01-15">15 Enero 2025</time>
         <h3>
-          <a href="/blog/mi-primer-mes.html">
+          <a href="blog/mi-primer-mes.html">
             Mi Primer Mes Aprendiendo HTML
           </a>
         </h3>
@@ -298,11 +258,10 @@
         <span>📖 5 min de lectura</span>
       </article>
 
-      <!-- Artículo 2 -->
       <article>
         <time datetime="2025-01-08">8 Enero 2025</time>
         <h3>
-          <a href="/blog/recursos-utiles.html">
+          <a href="blog/recursos-utiles.html">
             5 Recursos Gratuitos para Aprender HTML
           </a>
         </h3>
@@ -313,12 +272,11 @@
         <span>📖 3 min de lectura</span>
       </article>
 
-      <a href="/blog.html">
+      <a href="blog.html">
         Ver todos los artículos →
       </a>
     </section>
 
-    <!-- Call to Action -->
     <section aria-labelledby="cta-titulo">
       <h2 id="cta-titulo">¿Te gustaría conectar?</h2>
       <p>
@@ -330,32 +288,25 @@
       <div>
         <h3>🚀 Proyectos de Práctica</h3>
         <p>¿Tienes una idea? Colaboremos y aprendamos juntos</p>
-        <a href="/contacto.html#colaborar">Colaborar</a>
+        <a href="contacto.html#colaborar">Colaborar</a>
       </div>
 
       <div>
         <h3>💬 Conectemos</h3>
         <p>¿Eres principiante también? Aprendamos juntos</p>
-        <a href="/contacto.html#conectar">Conectar</a>
+        <a href="contacto.html#conectar">Conectar</a>
       </div>
 
       <div>
         <h3>📚 Recursos</h3>
         <p>Compartamos recursos y tips de aprendizaje</p>
-        <a href="/contacto.html#recursos">Compartir</a>
+        <a href="contacto.html#recursos">Compartir</a>
       </div>
     </section>
 
   </main>
 
-  <!-- 
-    ========================================
-    FOOTER COMPLETO
-    ========================================
-    -->
-
   <footer role="contentinfo">
-    <!-- Sobre Mi Perfil Personal -->
     <section aria-labelledby="footer-about">
       <h2 id="footer-about">Mi Perfil Personal</h2>
       <p>
@@ -363,8 +314,7 @@
         Aprendiendo desarrollo web un día a la vez.
       </p>
 
-      <!-- Newsletter -->
-      <form action="/newsletter" method="POST">
+      <form action="#" method="POST">
         <label for="newsletter-email">
           Suscríbete a mi newsletter
         </label>
@@ -373,18 +323,16 @@
       </form>
     </section>
 
-    <!-- Enlaces del Footer -->
     <nav aria-label="Enlaces del footer">
       <ul>
-        <li><a href="/miperfil.html">Inicio</a></li>
-        <li><a href="/sobre-mi.html">Sobre mí</a></li>
-        <li><a href="/proyectos.html">Proyectos</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/contacto.html">Contacto</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
 
-    <!-- Contacto -->
     <section aria-labelledby="footer-contact">
       <h2 id="footer-contact">Contacto</h2>
       <address>
@@ -416,7 +364,6 @@
       </address>
     </section>
 
-    <!-- Redes Sociales -->
     <section aria-labelledby="footer-social">
       <h2 id="footer-social">Sígueme</h2>
       <ul>
@@ -433,20 +380,18 @@
         </li>
       </ul>
 
-      <!-- Descargas -->
-      <a href="/assets/documents/Hoja_de_Vida_Desarrollador_Web_Daniel_Gomez.pdf" download>
+      <a href="assets/documents/Hoja_de_Vida_Desarrollador_Web_Daniel_Gomez.pdf" download>
         📄 Descargar mi CV (PDF)
       </a>
     </section>
 
-    <!-- Footer Bottom -->
     <div>
       <p>&copy; 2025 Daniel Gomez - Mi Perfil Personal. Todos los derechos reservados.</p>
 
       <nav aria-label="Enlaces legales">
-        <a href="/privacidad.html">Privacidad</a>
-        <a href="/terminos.html">Términos</a>
-        <a href="/accesibilidad.html">Accesibilidad</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="accesibilidad.html">Accesibilidad</a>
       </nav>
 
       <p>
