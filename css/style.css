@@ -193,7 +193,7 @@ figure img {
   width: 100%;
   max-width: 450px;   /* tamaño ideal en pantalla */
   height: auto;
-  border-radius: 50%;
+  border-radius: 0%;
   box-shadow: var(--shadow);
   border: 5px ridge var(--primary);
   filter: brightness(1.08);
@@ -432,6 +432,7 @@ footer div {
     display: block;
   }
 }
+
 
 
 
