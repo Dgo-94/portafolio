@@ -371,62 +371,64 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
+@media (max-width: 768px) {
   header {
     padding: 1rem;
-    display: grid; /* Cambiamos de flex a grid */
-    /* Definimos 2 columnas: izquierda y derecha */
-    grid-template-columns: 1fr 1fr; 
+    display: flex;
+    flex-direction: column; /* Apilamos en dos filas */
     gap: 15px;
+  }
+
+  /* FILA 1: Logo+Título a la izquierda y Acciones a la derecha */
+  .header-top-row { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Empuja a los extremos */
     align-items: center;
   }
 
-  /* 1. LOGO: Arriba a la izquierda */
-  header .brand {
-    grid-column: 1; 
-    grid-row: 1;
-    justify-self: start;
+  /* Ajustamos el contenedor del logo y título */
+  header .brand a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
-  /* 2. TÍTULO (H1): Centrado (ocupa toda la fila de arriba) */
   header .brand h1 {
-    position: absolute; /* Lo sacamos del flujo para centrarlo respecto a la pantalla */
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 1.1rem;
+    margin: 0;
     white-space: nowrap;
   }
 
-  /* 3. LINKS: Abajo a la izquierda */
+  header .brand img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* FILA 2: Los links de navegación abajo a la izquierda */
   header nav {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: start;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.1); /* Separador sutil */
+    padding-top: 10px;
   }
 
   header nav ul {
     display: flex;
-    gap: 0.8rem;
-    justify-content: flex-start;
+    flex-wrap: wrap; /* Por si son muchos links */
+    gap: 15px;
+    justify-content: flex-start; /* Todo a la izquierda */
+    list-style: none;
     padding: 0;
   }
 
   header nav a {
     font-size: 0.85rem;
-    padding: 0;
+    font-weight: 500;
   }
 
-  /* 4. ACTION: Abajo a la derecha */
+  /* Ajuste de acciones para que no floten */
   header .header-actions {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: end;
-    display: flex;
-  }
-
-  /* Reset de la imagen para que no empuje el H1 */
-  header .brand img {
-    width: 30px;
-    height: 30px;
+    margin-left: auto;
   }
 
   /* 2. HERO STATS: Columna perfecta */
@@ -454,5 +456,6 @@ footer div {
     height: auto;
   }
 }
+
 
 
