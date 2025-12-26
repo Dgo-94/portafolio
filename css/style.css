@@ -371,65 +371,60 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
-    header {
+  /* 1. HEADER: Forzamos orden y evitamos desbordamiento */
+  header {
     padding: 0.6rem 1rem;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; /* NUEVO: Evita que el contenido del header salte a una segunda línea */
+    flex-wrap: nowrap; /* Evita que los elementos se encimen */
+    gap: 10px;
   }
 
   header .brand a {
     display: flex;
-    flex-direction: row; 
     align-items: center;
     gap: 8px;
-    flex-shrink: 0; /* NUEVO: Evita que el logo y texto se compriman demasiado */
+    flex-shrink: 0; /* El logo no se achica */
   }
 
   header .brand h1 {
-    font-size: 1.1rem; 
+    font-size: 1rem; /* Un poco más pequeño para asegurar espacio */
+    white-space: nowrap;
     margin: 0;
-    white-space: nowrap; /* NUEVO: Obliga al nombre a estar en una sola línea siempre */
   }
 
   header .brand img {
-    width: 35px; 
-    height: 35px;
-    object-fit: contain; /* NUEVO: Asegura que el logo no se deforme */
+    width: 30px; 
+    height: 30px;
   }
 
-  /* Ajustes opcionales para el menú si sigue ocupando mucho espacio */
-  /* 1. Cambiamos la dirección a columna vertical */
-.hero-stats {
-  display: flex;
-  flex-direction: column; /* Alineación vertical: uno debajo de otro */
-  align-items: center;    /* Centra los elementos horizontalmente */
-  gap: 1.5rem;            /* Espacio vertical entre los bloques */
-  margin: 1.5rem 0;
+  /* Ocultamos navegación pesada en móvil si estorba (opcional) */
+  header nav {
+    display: none; /* Si quieres un menú hamburguesa, esto se cambia. Si no, quita esta línea */
+  }
+
+  /* 2. HERO STATS: Columna perfecta */
+  .hero-stats {
+    display: flex;
+    flex-direction: column !important; /* El !important asegura que gane a cualquier otra regla */
+    align-items: center;
+    gap: 2rem; 
+    margin: 2rem 0;
+  }
+
+  .hero-stats div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-stats data {
+    font-size: 1.8rem;
+    display: block;
+  }
+
+  /* 3. IMAGEN: Que no rompa el diseño */
+  figure img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
-/* 2. Ajustes de los contenedores individuales */
-.hero-stats div {
-  width: 100%;            /* Ocupa el ancho completo disponible */
-  text-align: center;     /* Centra el contenido de cada bloque */
-}
-
-/* 3. Reducimos el tamaño de los números y etiquetas */
-.hero-stats data {
-  font-size: 1.5rem;  
-  display: block;     
-  margin-bottom: 0.2rem; /* Pequeño espacio opcional entre número y texto */
-}
-
-.hero-stats span {
-  font-size: 0.8rem;  
-  display: block;
-}
-}
-
-
-
-
-
-
-
-
