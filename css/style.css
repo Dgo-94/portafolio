@@ -371,46 +371,63 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
-  /* 1. HEADER: Forzamos orden y evitamos desbordamiento */
-    /* Reducimos el padding del header para que sea más delgado */
   header {
-    padding: 0.8rem 1rem;
-    display: flex;
-    flex-direction: column; /* Apilamos logo arriba y menú abajo para que quepan todos */
-    gap: 10px;
+    padding: 1rem;
+    display: grid; /* Cambiamos de flex a grid */
+    /* Definimos 2 columnas: izquierda y derecha */
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
     align-items: center;
   }
 
-  /* El logo y el título siempre juntos */
-  header .brand a {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    gap: 8px;
+  /* 1. LOGO: Arriba a la izquierda */
+  header .brand {
+    grid-column: 1; 
+    grid-row: 1;
+    justify-self: start;
   }
 
+  /* 2. TÍTULO (H1): Centrado (ocupa toda la fila de arriba) */
   header .brand h1 {
-    font-size: 1.2rem;
-    margin: 0;
+    position: absolute; /* Lo sacamos del flujo para centrarlo respecto a la pantalla */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    white-space: nowrap;
   }
 
-  /* Ajustamos el menú para que los enlaces no se amontonen */
+  /* 3. LINKS: Abajo a la izquierda */
+  header nav {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+
   header nav ul {
-    gap: 0.5rem; /* Espacio pequeño entre links */
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    padding: 0;
   }
 
   header nav a {
-    font-size: 0.85rem; /* Texto de menú más pequeño para móvil */
-    padding: 4px 8px;
+    font-size: 0.85rem;
+    padding: 0;
   }
 
-  /* Las acciones (como el select) también centradas */
+  /* 4. ACTION: Abajo a la derecha */
   header .header-actions {
-    gap: 0.5rem;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    display: flex;
   }
 
+  /* Reset de la imagen para que no empuje el H1 */
+  header .brand img {
+    width: 30px;
+    height: 30px;
+  }
 
   /* 2. HERO STATS: Columna perfecta */
   .hero-stats {
@@ -437,4 +454,5 @@ footer div {
     height: auto;
   }
 }
+
 
