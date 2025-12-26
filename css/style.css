@@ -371,12 +371,11 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
-@media (max-width: 768px) {
   header {
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     display: flex;
     flex-direction: column; /* Apilamos en dos filas */
-    gap: 15px;
+    gap: 5px;
   }
 
   /* FILA 1: Logo+Título a la izquierda y Acciones a la derecha */
@@ -415,7 +414,7 @@ footer div {
   header nav ul {
     display: flex;
     flex-wrap: wrap; /* Por si son muchos links */
-    gap: 15px;
+    gap: 12px;
     justify-content: flex-start; /* Todo a la izquierda */
     list-style: none;
     padding: 0;
@@ -456,6 +455,7 @@ footer div {
     height: auto;
   }
 }
+
 
 
 
