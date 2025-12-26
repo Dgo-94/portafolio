@@ -371,29 +371,30 @@ footer div {
    RESPONSIVE
    ============================ */
 @media (max-width: 768px) {
-  /* Forzamos a que el logo y el texto estén en la misma línea */
-  header .brand a {
-    display: flex;
-    flex-direction: row; /* Esto mantiene la imagen a la izquierda del texto */
-    align-items: center;
-    gap: 8px; /* Espacio entre el texto y el logo */
+    header {
+    padding: 0.6rem 1rem;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* NUEVO: Evita que el contenido del header salte a una segunda línea */
   }
 
-  /* Ajustamos el tamaño para que quepan juntos */
+  header .brand a {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0; /* NUEVO: Evita que el logo y texto se compriman demasiado */
+  }
+
   header .brand h1 {
-    font-size: 1.1rem; /* Texto más pequeño para que no empuje el logo */
+    font-size: 1.1rem; 
     margin: 0;
+    white-space: nowrap; /* NUEVO: Obliga al nombre a estar en una sola línea siempre */
   }
 
   header .brand img {
-    width: 35px; /* Logo más pequeño */
+    width: 35px; 
     height: 35px;
-  }
-
-  /* Reducimos el padding del header para que sea más delgado */
-  header {
-    padding: 0.6rem 1rem;
-    justify-content: space-between;
+    object-fit: contain; /* NUEVO: Asegura que el logo no se deforme */
   }
 
   /* Ajustes opcionales para el menú si sigue ocupando mucho espacio */
@@ -424,6 +425,7 @@ footer div {
   display: block;
 }
 }
+
 
 
 
