@@ -378,14 +378,6 @@ footer div {
     gap: 5px;
   }
 
-  /* FILA 1: Logo+Título a la izquierda y Acciones a la derecha */
-  .header-top-row { 
-    display: flex;
-    width: 100%;
-    justify-content: space-between; /* Empuja a los extremos */
-    align-items: center;
-  }
-
   /* Ajustamos el contenedor del logo y título */
   header .brand a {
     display: flex;
@@ -455,6 +447,7 @@ footer div {
     height: auto;
   }
 }
+
 
 
 
