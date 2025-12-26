@@ -372,36 +372,45 @@ footer div {
    ============================ */
 @media (max-width: 768px) {
   /* 1. HEADER: Forzamos orden y evitamos desbordamiento */
+    /* Reducimos el padding del header para que sea más delgado */
   header {
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 1rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Evita que los elementos se encimen */
+    flex-direction: column; /* Apilamos logo arriba y menú abajo para que quepan todos */
     gap: 10px;
+    align-items: center;
   }
 
+  /* El logo y el título siempre juntos */
   header .brand a {
     display: flex;
+    flex-direction: row; 
     align-items: center;
     gap: 8px;
-    flex-shrink: 0; /* El logo no se achica */
   }
 
   header .brand h1 {
-    font-size: 1rem; /* Un poco más pequeño para asegurar espacio */
-    white-space: nowrap;
+    font-size: 1.2rem;
     margin: 0;
   }
 
-  header .brand img {
-    width: 30px; 
-    height: 30px;
+  /* Ajustamos el menú para que los enlaces no se amontonen */
+  header nav ul {
+    gap: 0.5rem; /* Espacio pequeño entre links */
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  /* Ocultamos navegación pesada en móvil si estorba (opcional) */
-  header nav {
-    display: none; /* Si quieres un menú hamburguesa, esto se cambia. Si no, quita esta línea */
+  header nav a {
+    font-size: 0.85rem; /* Texto de menú más pequeño para móvil */
+    padding: 4px 8px;
   }
+
+  /* Las acciones (como el select) también centradas */
+  header .header-actions {
+    gap: 0.5rem;
+  }
+
 
   /* 2. HERO STATS: Columna perfecta */
   .hero-stats {
@@ -428,3 +437,4 @@ footer div {
     height: auto;
   }
 }
+
