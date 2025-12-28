@@ -8,19 +8,26 @@
 }
 
 :root {
-  --bg: #000000;
-  --bg-secondary: #353535;
-  --bg-cards: #494949;
-  --text: #e6edf3;
-  --text-muted: #ffffff;
-  --primary: #4bf63b;
-  --primary-light: #000000;
-  --primary-hover: #60a5fa;
-  --border: #2a303c;
-  --radius: 10px;
-  --shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  --max-width: 1200px;
-  --transition: 0.3s ease;
+  /* Fondos: Blancos rotos y grises muy suaves para evitar la fatiga visual */
+  --bg: #f8fafc;           /* Un blanco azulado muy limpio */
+  --bg-secondary: #ffffff; /* Blanco puro para destacar secciones */
+  --bg-cards: #ffffff;    
+  
+  /* Textos: Azul oscuro profundo para máxima legibilidad y seriedad */
+  --text: #0f172a;         /* Azul casi negro (transmite mucha confianza) */
+  --text-muted: #475569;   /* Gris azulado para descripciones */
+  
+  /* Colores de marca: Un azul acero o un verde salvia pastel */
+  --primary: #2563eb;       /* Azul profesional (el estándar de confianza) */
+  --primary-light: #dbeafe; /* Azul pastel muy suave para fondos de etiquetas */
+  --primary-hover: #1d4ed8; /* Un azul un poco más intenso para el hover */
+  
+  /* Detalles */
+  --border: #e2e8f0;       /* Gris suave para separar elementos sin ensuciar */
+  --radius: 12px;          /* Un poco más redondeado para ser más amigable */
+  --shadow: 0 4px 6px -1px rgb(48, 114, 255), 0 2px 4px -1px rgb(79, 186, 236);
+  --max-width: 1100px;
+  --transition: 0.2s ease-in-out;
 }
 
 body {
@@ -47,7 +54,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(0, 255, 0);
+  color: var(--primary)
 }
 
 p {
@@ -312,7 +319,7 @@ section div {
    FOOTER
    ============================ */
 footer {
-  background: #0b0f14;
+  background: var(--bg-secondary);
   padding: 4rem 2rem;
   margin-top: 4rem;
   border-top: 1px solid #1f2937;
